@@ -23,4 +23,10 @@
       ii) After Installing node.js navigate to the directory where this repository is saved. Open the command line/terminal and RUN THiS COMMAND : 
           npm install canvas express fs gifencoder serve-static
   4) After insatlling the Packages make this command: "node index.js", in the command line/terminal in your project directory and press ENTER. 
-  5) HAVE FUN. :-)
+  5) To configure this feature only to certain domains do this :![Screenshot (16)](https://github.com/code-arnab/Old-School-GIF-Hit-Counter/assets/119315596/f28cf74b-e3b7-4c43-9312-80c6ff653a29)
+
+  6) HAVE FUN. :-)
+# Sample images: 
+![Screenshot (14)](https://github.com/code-arnab/Old-School-GIF-Hit-Counter/assets/119315596/95de832d-f161-4f45-ae86-bc23d75accd4)
+![Screenshot (15)](https://github.com/code-arnab/Old-School-GIF-Hit-Counter/assets/119315596/881b7d16-c92f-47cd-8fd8-dc4398440040)
+
