@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Old_School_Hit_Counter</title>
+    <style>
+        body {
+          background-color: white;
+          max-width: 100%;
+        }
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .top {
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        .fork-image {
+            background-color: white;
+            margin-top: 110px;
+            margin-bottom: 60px;
+            border-radius: 15px;
+            border: 3px solid black;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-left: 40px;
+        }
+        
+      </style>
+  </head>
+  <body>
+    <div class="center top">
+      <h1>Click Here</h1>
+    </div>
+    <div class="center">
+        <div class="fork-image">
+            <a href="<URL>" target="_blank" onclick="incrementHitCount()">
+                <img src="src/fork.png" alt="Fork" />
+            </a>
+        </div>
+    </div>
+    <div class="center">
+        <div class="gif_image">
+            <img src="/hit-counter" alt="Hit Counter"/>
+        </div>
+    </div>
+    <script>
+        // incrementing the hit count by making a request to increment route in index.js
+        function incrementHitCount() {
+            fetch('/increment')
+            //waiting for the response from increment route in index.js
+            .then(() => {
+                // reloading the page to update the hit count
+          location.reload();
+        }).catch((error) => {
+          console.error(error);
+        });
+        }
+      </script>
+  </body>
+</html>
